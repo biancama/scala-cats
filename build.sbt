@@ -12,3 +12,5 @@ lazy val root = project
   )
 
 libraryDependencies += "org.typelevel" %% "cats-core" % "2.8.0"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.12" % Test
+scalacOptions += "-language:higherKinds"
