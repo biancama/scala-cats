@@ -16,7 +16,7 @@ class TruthTest extends AnyFlatSpec with Matchers {
   }
 
   it should "be complain to associative law" in {
-    checkIdentity(booleans)(andMonoid) should be(true)
+    checkAssociative(booleans)(andMonoid) should be(true)
   }
 
   behavior of "orTruth"
@@ -26,7 +26,7 @@ class TruthTest extends AnyFlatSpec with Matchers {
   }
 
   it should "be complain to associative law" in {
-    checkIdentity(booleans)(orMonoid) should be(true)
+    checkAssociative(booleans)(orMonoid) should be(true)
   }
 
   behavior of "xorTruth"
@@ -36,7 +36,7 @@ class TruthTest extends AnyFlatSpec with Matchers {
   }
 
   it should "be complain to associative law" in {
-    checkIdentity(booleans)(xorMonoid) should be(true)
+    checkAssociative(booleans)(xorMonoid) should be(true)
   }
 
   behavior of "xnorTruth"
@@ -46,7 +46,7 @@ class TruthTest extends AnyFlatSpec with Matchers {
   }
 
   it should "be complain to associative law" in {
-    checkIdentity(booleans)(xnorMonoid) should be(true)
+    checkAssociative(booleans)(xnorMonoid) should be(true)
   }
 
 }
