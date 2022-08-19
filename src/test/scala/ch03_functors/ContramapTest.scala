@@ -4,7 +4,7 @@ import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import ch03_functors.Printable._
 
-class PrintableTest extends AnyFlatSpec with Matchers {
+class ContramapTest extends AnyFlatSpec with Matchers {
  behavior of "Printable"
 
 
