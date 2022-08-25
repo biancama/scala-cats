@@ -23,7 +23,6 @@ def fibonacciIterative(n: BigInt):BigInt = {
             }
             fib_n_1
       }
-
 }
 
 def fibonacciTail(n: BigInt): BigInt = {
@@ -42,13 +41,4 @@ def fibonacciTailTrampolined(n: BigInt): Eval[BigInt] = {
       }
       if (n == 0) Eval.now(0) else fibonacciTailTrampolined(n, 1, 0)
 }
-//def fibonacciTailTrampolined(n: BigInt): Eval[BigInt] = {
-//      def fibonacciTailTrampolined(a: BigInt, fib_n_1: BigInt, fib_n_2:BigInt): Eval[BigInt] = {
-//            println(s"a: ${a} fib_n_1: ${fib_n_1} fib_n_2: ${fib_n_2}")
-//            if(a <= 1) 0
-//            else fibonacciTail(a - 1, fib_n_1 + fib_n_2, fib_n_1)
-//
-//      }
-//      if (n == 0) 0 else fibonacciTail(n, 1, 0)
-//}
 
