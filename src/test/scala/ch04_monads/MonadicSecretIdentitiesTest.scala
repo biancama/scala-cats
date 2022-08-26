@@ -4,7 +4,7 @@ import ch04_monads.MonadicSecretIdentity.{Id, IdMonad}
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 
-class MonadicSecretIdentitiesTest extends AnyFlatSpec with Matchers{
+class MonadicSecretIdentitiesTest extends AnyFlatSpec with Matchers {
   behavior of "Monad[Id]"
   val id:Id[Int] = 3
   val monadId = new IdMonad[Int]
